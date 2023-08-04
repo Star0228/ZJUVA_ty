@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
         <img src={logo} className="App-logo" alt="logo" />
         <h1>我不想学大数据可视化了！！！</h1>
         <p>
