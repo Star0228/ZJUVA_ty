@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 本仓库是小组共享工作的代码托管区
+main分支总项目
+Dev修改的项目
+axin————wxy修改的分支（source：Dev）
+——待补充分支
+*建议每人一分支，合并至Dev上*
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
