@@ -35,15 +35,15 @@ const Theme =createTheme({
 }
 
 )
-const Card = () => {
+const Card = ({tour}) => {
     return (
-        <Grid item xs={4}>
+        <Grid item xs={3}>
            <ThemeProvider theme={Theme}>    
            <Paper elevation={3}>
-                <img src="https://img.zcool.cn/community/01704b5a0b0fafa80121985c4d0572.jpg@1280w_1l_2o_100sh.jpg" alt="111" className='image' />
+                <img src={tour.image} alt="111" className='image'  />
                 <Box paddingX={2} >
                     <Typography variant='h4' component="h1">
-                        ZJUVA-Ty
+                        {tour.name}
                     </Typography>
                     <Typography variant='subtitle1' component="h2">
                         From axin
@@ -55,26 +55,26 @@ const Card = () => {
                     >
                         <AccessTime sx={{ width: 12.5 }} />
                         <Typography variant='body2' component="h3" marginLeft={0.5}>
-                            some text.
+                            {tour.duration}
                         </Typography>
                     </Box>
                     <Box sx={{
                         display: 'flex',
                         alignItems: 'center'
                     }}
-                    marginTop={2}
+                    marginTop={1}
                     >
-                       <Rating name="read-only" value={4.5}  precision={0.1} readOnly />
+                       <Rating name="read-only" value={tour.rating}   precision={0.1} readOnly />
                        <Typography variant='body2' component="h3" marginLeft={0.5}>
-                            4.5   
+                            {tour.rating} 
                         </Typography>
                         <Typography variant='body2' component="h3" marginLeft={3.5}>
-                             (114514 reviews)
+                             ({tour.numberOfReviews}reviews)
                         </Typography>
                     </Box>
                     <Box>
                     <Typography variant='h6' component="h3" >
-                             From ZJUVA
+                     {tour.price} 
                         </Typography>
                     </Box>
                 </Box>
