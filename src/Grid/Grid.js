@@ -29,13 +29,13 @@ export default function GridWeb() {
             marginTop={2}
             sx={{ flexGrow: 1 }}>
             <Grid container spacing={0.1} >
-                <Grid item xs={6} md={4.5} marginX={2}>
-                    <Item sx={{ bgcolor: '#E0E0E0', height: '45vh' }}>
+                <Grid item xs={6} md={4.5} marginX={3}>
+                    <Item className='IM1' sx={{ bgcolor: '#FFFFFF', height: '45vh' }}>
                     <Controller  CategorySelect={CategorySelect} setCategorySelect={setCategorySelect} SizeSelect={SizeSelect} setSizeSelect={setSizeSelect} TypeSelect={TypeSelect} setTypeSelect={setTypeSelect} RankingSelect={RankingSelect} setRankingSelect={setRankingSelect}/>
                         </Item>
                 </Grid>
                 <Grid item xs={6} md={7} >
-                    <Item sx={{ bgcolor: '#E0E0E0', height: '45vh' }}>
+                    <Item className='IM2' sx={{ bgcolor: '#FFFFFF', height: '45vh' }}>
                         <Box marginTop={7} height={400}>
                         <MainViewer CategorySelect={CategorySelect} SizeSelect={SizeSelect} TypeSelect={TypeSelect} RankingSelect={RankingSelect}/>
                         </Box>
@@ -43,13 +43,13 @@ export default function GridWeb() {
                 </Grid>
             </Grid>
             <Grid container spacing={0.1} marginY={1}>
-                <Grid item xs={6} md={3} marginX={1}>
-                    <Item sx={{ bgcolor: '#E0E0E0', height: '40vh' }}>
+                <Grid item xs={6} md={3} marginX={2}>
+                    <Item className='IM3' sx={{ bgcolor: '#FFFFFF', height: '40vh' }}>
                         <DataGridDemo />
                     </Item>
                 </Grid>
                 <Grid item xs={6} md={4} marginX={1}>
-                    <Item sx={{ bgcolor: '#E0E0E0', height: '40vh' }}>
+                    <Item className='IM4' sx={{ bgcolor: '#FFFFFF', height: '40vh' }}>
                         <div>
                             <AUtocomplete Item={APPItem} setItem={setAPPItem}/>
                             <Wc AppItem={APPItem}/>
@@ -57,7 +57,7 @@ export default function GridWeb() {
                     </Item>
                 </Grid>
                 <Grid item xs={6} md={4.5} >
-                    <Item sx={{ bgcolor: '#E0E0E0', height: '40vh' }}>
+                    <Item className='IM5' sx={{ bgcolor: '#FFFFFF', height: '40vh' }}>
                         <Box >
                         <Radar />
                         </Box>
