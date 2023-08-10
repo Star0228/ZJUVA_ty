@@ -1,7 +1,7 @@
 import { TextField } from '@mui/material';
 import Autocomplete from '@mui/material/Autocomplete';
 
-const Appp = [
+const Apps = [
     {label:"8 Ball Pool"},
     {label:"Adobe Acrobat Reader"},
     {label:"Amazon Shopping"},
@@ -14,19 +14,15 @@ const Appp = [
     {label:"Gmail"}
   ]  
 
-
-export default function AUtocomplete({InputValue,setInputvalue}){
-    return(
-        <>
+export default function AUtocomplete({Item,setItem}){
+    return(     
         <Autocomplete 
-        options={Appp} 
+        options={Apps} 
         renderInput={(params) => <TextField {...params} label='Apps' />}
-        inputValue={InputValue}
+        inputValue={Item}
         onInputChange={(event, newInputValue) => {
-            setInputvalue(newInputValue);
+            setItem(newInputValue);
         }}
         />
-            <div>{InputValue}</div>
-        </>
     );
 }
