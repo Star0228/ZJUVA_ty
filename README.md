@@ -5,6 +5,7 @@ Dev-更新项目专用分支.\
 axin-wxy修改的分支（source：Dev）.\
 ——待补充分支.\
 建议每人一分支，合并至Dev上.\
+![效果图](效果图.png "效果图")
 # 使用开源工具：
 ——————
 - 框架：React<br>
@@ -13,4 +14,4 @@ axin-wxy修改的分支（source：Dev）.\
 - MUI X<br>
 - ECharts<br>
 - Canvas<br>
-![效果图](效果图.png "效果图")
+
