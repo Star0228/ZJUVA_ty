@@ -31,6 +31,15 @@ const NameOfOptions = {
   Type: ['Free', 'Paid'],
   Ranking: ['Everyone', 'Everyone 10+', 'Teen', 'Mature 17+']
 }
+const MenuProps = {
+  PaperProps: {
+    style: {
+      maxHeight: 50,
+      width: 1,
+    },
+  },
+};
+
 
 function CreateSelectLabels({ value, setValue, NameOfId, Options }) {
 
@@ -42,6 +51,15 @@ function CreateSelectLabels({ value, setValue, NameOfId, Options }) {
       typeof value === 'string' ? value.split(',') : value,
     );
   };
+  const MenuProps = {
+    PaperProps: {
+      style: {
+        maxHeight: 224,
+        width: 250,
+      },
+    },
+  };
+  
 
   const MenuItems = Options.map((item) => (
     <MenuItem key={NameOfId} value={item}>{item}</MenuItem>
@@ -49,7 +67,7 @@ function CreateSelectLabels({ value, setValue, NameOfId, Options }) {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 120 }}>
+      <FormControl sx={{ m: 1, width: 350 }}>
         <InputLabel id={NameOfId}>{NameOfId}</InputLabel>
         <Select
           labelId={NameOfId}
@@ -59,6 +77,8 @@ function CreateSelectLabels({ value, setValue, NameOfId, Options }) {
           label={NameOfId}
           onChange={handleChange}
           input={<OutlinedInput label="Name" />}
+          MenuProps={MenuProps}
+
         >
           {/* <MenuItem value="">
             <em>None</em>
@@ -76,7 +96,7 @@ export default function Controller({CategorySelect, setCategorySelect, SizeSelec
   return (
     <div>
       <CreateSelectLabels 
-      value={CategorySelect} setValue={setCategorySelect} NameOfId={NameOfSelection[0]} Options={NameOfOptions.Category } 
+      value={CategorySelect} setValue={setCategorySelect} NameOfId={NameOfSelection[0]} Options={NameOfOptions.Category }  
       
       />
       <CreateSelectLabels value={SizeSelect} setValue={setSizeSelect} NameOfId={NameOfSelection[1]} Options={NameOfOptions.Size} />
