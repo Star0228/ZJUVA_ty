@@ -9,28 +9,17 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function WebBar() {
   return (
-    <AppBar position="static">
+    <AppBar position="static" className='bar' style={{  }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
             noWrap
             component="a"
-            // href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'Helvetica Neue',
-              //           '-apple-system',
-              //   'BlinkMacSystemFont',
-              //   '"Segoe UI"',
-              //   'Roboto',
-              //   '"Helvetica Neue"',
-              //   'Arial',
-              //   'sans-serif',
-              //   '"Apple Color Emoji"',
-              //   '"Segoe UI Emoji"',
-              //   '"Segoe UI Symbol"',
               fontWeight: 500,
               letterSpacing: '0.5px',
               color: 'inherit',
