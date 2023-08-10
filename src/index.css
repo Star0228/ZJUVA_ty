@@ -1,29 +1,43 @@
-.cloud{
-  font-family: 'Big Shoulders Stencil Text',900;
 
-}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
     font-family:"Roboto";
+    font-weight: bold;
 }
+body{
+  background-image: url('https://img.zcool.cn/community/015fa55b117f2fa801202e60106a69.jpg@1280w_1l_2o_100sh.jpg');
+  background-repeat:no-repeat;/*设置背景不重复*/
+	background-attachment:fixed; /*背景图片不会随着页面的滚动而滚动。*/
+	background-size:cover;/*	此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。*/
 
-
-
-/* body {
-  margin: 0;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; 
-  padding: 0;
-  box-sizing: border-box;
-    font-family:"Roboto";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+.bar{
+  background-image:url('https://img.51miz.com/Element/00/81/15/31/78e206f5_E811531_93ea03d5.jpg');
+  background-repeat:no-repeat;/*设置背景不重复*/
+	background-attachment:fixed; /*背景图片不会随着页面的滚动而滚动。*/
+	background-size:cover;/*	此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。*/
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+
+}
+/* .IM1{
+  background-image:url('https://pic.52112.com/180524/JPG-180524_266/g7SGic0ETH_small.jpg');
+
+}
+.IM2{
+  background-color: #3ed5ff
+
+}
+.IM3{
+  background-image:url('https://pic.52112.com/180524/JPG-180524_266/g7SGic0ETH_small.jpg');
+
+} 
+ .IM4{
+  background-color: #e3300c
+
+}
+.IM5{
+  background-color: #AEE2FF
+
+}  */

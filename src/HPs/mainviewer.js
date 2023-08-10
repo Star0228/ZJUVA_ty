@@ -86,7 +86,7 @@ export default function MainViewer({ CategorySelect, SizeSelect, TypeSelect, Ran
   var option;
   option = {
     title: {
-      text: 'MainViewer',
+      text: ' ',
       left: '5%',
       top: '3%'
     },

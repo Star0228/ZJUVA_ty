@@ -13,7 +13,7 @@ function Radar(){
     var option;
     option={
     title:{
-        text: '软件实力面板'
+        text: '软件对比'
     },
     legend: {
         data: [app1.App, app2.App]
