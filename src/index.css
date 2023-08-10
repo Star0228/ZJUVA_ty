@@ -7,20 +7,21 @@
     font-weight: bold;
 }
 body{
-  background-image: url('https://img.zcool.cn/community/015fa55b117f2fa801202e60106a69.jpg@1280w_1l_2o_100sh.jpg');
-  background-repeat:no-repeat;/*设置背景不重复*/
-	background-attachment:fixed; /*背景图片不会随着页面的滚动而滚动。*/
-	background-size:cover;/*	此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。*/
-
+  background-color: #f9f9ff;
 }
+/* body{
+  background-image: url('https://img.zcool.cn/community/015fa55b117f2fa801202e60106a69.jpg@1280w_1l_2o_100sh.jpg');
+  background-repeat:no-repeat;
+	background-attachment:fixed; 
+	background-size:cover;
+
 .bar{
   background-image:url('https://img.51miz.com/Element/00/81/15/31/78e206f5_E811531_93ea03d5.jpg');
-  background-repeat:no-repeat;/*设置背景不重复*/
-	background-attachment:fixed; /*背景图片不会随着页面的滚动而滚动。*/
-	background-size:cover;/*	此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。*/
+  background-repeat:no-repeat;
+	background-attachment:fixed; 
+	background-size:cover;	
+ */
 
-
-}
 /* .IM1{
   background-image:url('https://pic.52112.com/180524/JPG-180524_266/g7SGic0ETH_small.jpg');
 
