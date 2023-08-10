@@ -9,6 +9,7 @@ import AUtocomplete from '../Cloud/Autocomplete';
 import { useState } from 'react';
 import MainViewer from '../HPs/mainviewer';
 import Controller from '../HPs/controller';
+import Radar from '../TRIANGLE/radar'
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -57,9 +58,8 @@ export default function GridWeb() {
                 </Grid>
                 <Grid item xs={6} md={4.5} >
                     <Item sx={{ bgcolor: '#E0E0E0', height: '40vh' }}>
-                        <p >444</p>
                         <Box >
-                            Box
+                        <Radar />
                         </Box>
                     </Item>
                 </Grid>

@@ -7,11 +7,10 @@ axin-wxy修改的分支（source：Dev）.\
 建议每人一分支，合并至Dev上.\
 # 使用开源工具：
 ——————
->框架：React
-<br>
-- react-d3-cloud
-- Material UI 
-- MUI X
-- ECharts
-- Canvas
+- 框架：React<br>
+- react-d3-cloud<br>
+- Material UI <br>
+- MUI X<br>
+- ECharts<br>
+- Canvas<br>
 
