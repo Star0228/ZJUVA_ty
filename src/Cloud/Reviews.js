@@ -7,13 +7,13 @@ const columns= [
  { field: 'id', headerName: 'ID', width: 10 },
   {
     field: 'App',
-    headerName: 'app',
+    headerName: 'App',
     width: 70,
     editable: true,
   },
   {
     field: 'Translated_Review',
-    headerName: 'translated_Review',
+    headerName: 'Translated_Review',
     width: 260,
     editable: true,
   },
@@ -24,7 +24,7 @@ const columns= [
 
 export default function DataGridDemo() {
   return (
-    <Box sx={{ height: 320, width: 350 }}>
+    <Box sx={{ height: 320, width: 400 }}>
       <DataGrid
         rows={rows}
         columns={columns}

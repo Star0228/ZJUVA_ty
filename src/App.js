@@ -1,10 +1,10 @@
 import './App.css';
-import SearchAppBar from './components/AppBar';
+import WebBar from './Grid/AppBar';
 import GridWeb from './Grid/Grid';
 function App() {
   return (
     <div className="App">
-      <SearchAppBar />
+      <WebBar />
       <GridWeb />
     </div>
   );
