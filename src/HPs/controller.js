@@ -75,7 +75,10 @@ export default function Controller({CategorySelect, setCategorySelect, SizeSelec
 
   return (
     <div>
-      <CreateSelectLabels value={CategorySelect} setValue={setCategorySelect} NameOfId={NameOfSelection[0]} Options={NameOfOptions.Category} />
+      <CreateSelectLabels 
+      value={CategorySelect} setValue={setCategorySelect} NameOfId={NameOfSelection[0]} Options={NameOfOptions.Category } 
+      
+      />
       <CreateSelectLabels value={SizeSelect} setValue={setSizeSelect} NameOfId={NameOfSelection[1]} Options={NameOfOptions.Size} />
       <CreateSelectLabels value={TypeSelect} setValue={setTypeSelect} NameOfId={NameOfSelection[2]} Options={NameOfOptions.Type} />
       <CreateSelectLabels value={RankingSelect} setValue={setRankingSelect} NameOfId={NameOfSelection[3]} Options={NameOfOptions.Ranking} />
