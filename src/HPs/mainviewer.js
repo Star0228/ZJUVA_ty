@@ -1,26 +1,5 @@
 import ReactEcharts from 'echarts-for-react'
-import * as echarts from 'echarts';
 import origindata from './thankshuguan.json'
-import { Height } from '@mui/icons-material';
-
-const tag = {
-  label: 'exported'
-}
-
-
-function Stander({ AppElement }) {
-  return ({
-    label: AppElement['App'],
-    data: [{
-      x: AppElement['Reviews'],
-      y: AppElement['Rating'],
-      id: AppElement['App'],
-    }],
-    markerSize: AppElement.IogInstall,
-    color: AppElement.PreparedColor
-  }
-  )
-}
 
 
 export default function MainViewer({ CategorySelect, SizeSelect, TypeSelect, RankingSelect }) {
@@ -60,7 +39,7 @@ export default function MainViewer({ CategorySelect, SizeSelect, TypeSelect, Ran
           }
         }
       )
-      var data = datawithempty.filter(item => item != [])
+      var data = datawithempty.filter(item => item !== [])
       var element =
       {
         name: e.name,
@@ -92,8 +71,8 @@ export default function MainViewer({ CategorySelect, SizeSelect, TypeSelect, Ran
     },
     color:['#1f77b4','#aec7e8','#ff7f0e','#ffbb78','#2ca02c','#98df8a','#d62728','#ff9896','#9467bd','#8c564b','#c49c94','#e377c2','"#f7b6d2','#7f7f7f','#c7c7c7','#bcbd22','#dbdb8d','#17becf','#9edae5'],
     legend: {
-      right: '10%',
-      top: '100%',//控制图例上下移动，100%保证图内不出现图例
+      right: '0%',
+      top: '0%',//控制图例上下移动，100%保证图内不出现图例
       data: ['GAME', 'COMMUNICATION','TOOLS','PRODUCTIVITY','PHOTOGRAPHY','SOCIAL','FAMILY','PERSONALIZATION','BOOKS_AND_REFERENCE','SHOPPING','VIDEO_PLAYERS','VIDEO_PLAYERS','NEWS_AND_MAGAZINES','ENTERTAINMENT','BUSINESS','HEALTH_AND_FITNESS','MAPS_AND_NAVIGATION','EDUCATION','FINANCE']
     },
     xAxis: {
@@ -120,7 +99,5 @@ export default function MainViewer({ CategorySelect, SizeSelect, TypeSelect, Ran
     <div Height={800}>
       <ReactEcharts option={option} />
     </div>
-      
-    
   );
 }
