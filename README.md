@@ -16,7 +16,6 @@ npm install echarts --save\
 npm install @mui/x-data-grid\
 npm install @fontsource-variable/big-shoulders-stencil-text\
 最后一步：npm start启动\
-\
 # 使用开源工具：
 ——————
 - 框架：React<br>
