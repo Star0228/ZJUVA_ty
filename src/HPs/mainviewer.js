@@ -99,7 +99,5 @@ export default function MainViewer({ CategorySelect, SizeSelect, TypeSelect, Ran
     <div Height={800}>
       <ReactEcharts option={option} />
     </div>
-      
-    
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import WordCloud from "react-d3-cloud";
-import  '@fontsource/big-shoulders-stencil-text/900.css';
+import  '@fontsource/big-shoulders-stencil-text';
 import data from '../Data/cloud2.json';
 
 const fontSize = (word) => (word.value)*2 ;
@@ -77,6 +77,7 @@ export default function Wc({AppItem}) {
       fontSize={fontSize}
       rotate={rotate}
       padding={0.5}
+      font="roboto"
     />
     
   );
