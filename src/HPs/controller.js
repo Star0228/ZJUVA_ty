@@ -27,10 +27,11 @@ const NameOfOptions = {
     'TRAVEL_AND_LOCAL',
     'VIDEO_PLAYERS',
   ],
-  Size: ['<1M', '1M-10M', '10M-50M','50M-100M','Varies with device'],
+  Size: ['<1M', '1M-10M', '10M-50M', '50M-100M', 'Varies with device'],
   Type: ['Free', 'Paid'],
   Ranking: ['Everyone', 'Everyone 10+', 'Teen', 'Mature 17+']
 }
+
 
 function CreateSelectLabels({ value, setValue, NameOfId, Options }) {
 
@@ -42,6 +43,15 @@ function CreateSelectLabels({ value, setValue, NameOfId, Options }) {
       typeof value === 'string' ? value.split(',') : value,
     );
   };
+  const MenuProps = {
+    PaperProps: {
+      style: {
+        maxHeight: 224,
+        width: 250,
+      },
+    },
+  };
+
 
   const MenuItems = Options.map((item) => (
     <MenuItem key={NameOfId} value={item}>{item}</MenuItem>
@@ -49,7 +59,7 @@ function CreateSelectLabels({ value, setValue, NameOfId, Options }) {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 120 }}>
+      <FormControl sx={{ m: 1, width: 350 }}>
         <InputLabel id={NameOfId}>{NameOfId}</InputLabel>
         <Select
           labelId={NameOfId}
@@ -59,6 +69,8 @@ function CreateSelectLabels({ value, setValue, NameOfId, Options }) {
           label={NameOfId}
           onChange={handleChange}
           input={<OutlinedInput label="Name" />}
+          MenuProps={MenuProps}
+
         >
           {/* <MenuItem value="">
             <em>None</em>
@@ -71,13 +83,13 @@ function CreateSelectLabels({ value, setValue, NameOfId, Options }) {
 }
 
 
-export default function Controller({CategorySelect, setCategorySelect, SizeSelect, setSizeSelect, TypeSelect, setTypeSelect, RankingSelect, setRankingSelect}) {
+export default function Controller({ CategorySelect, setCategorySelect, SizeSelect, setSizeSelect, TypeSelect, setTypeSelect, RankingSelect, setRankingSelect }) {
 
   return (
     <div>
-      <CreateSelectLabels 
-      value={CategorySelect} setValue={setCategorySelect} NameOfId={NameOfSelection[0]} Options={NameOfOptions.Category } 
-      
+      <CreateSelectLabels
+        value={CategorySelect} setValue={setCategorySelect} NameOfId={NameOfSelection[0]} Options={NameOfOptions.Category}
+
       />
       <CreateSelectLabels value={SizeSelect} setValue={setSizeSelect} NameOfId={NameOfSelection[1]} Options={NameOfOptions.Size} />
       <CreateSelectLabels value={TypeSelect} setValue={setTypeSelect} NameOfId={NameOfSelection[2]} Options={NameOfOptions.Type} />
