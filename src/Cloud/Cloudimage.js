@@ -4,7 +4,7 @@ import WordCloud from "react-d3-cloud";
 import  '@fontsource/big-shoulders-stencil-text/900.css';
 import data from '../Data/cloud2.json';
 
-const fontSize = (word) => (word.value)*8 ;
+const fontSize = (word) => (word.value)*2 ;
 const rotate = (word) => (Math.random() * 1000 % 90) - 45;
 
 export default function Wc({AppItem}) {
@@ -24,7 +24,7 @@ export default function Wc({AppItem}) {
     var data1=data["Amazon Shopping"];
     var newData = data1.map((item) => ({
      text:item.text,
-    value: item.value   
+    value: item.value+2   
    })); 
   }else if(AppItem==="Angry Birds 2"){
     var data1=data["Angry Birds 2"];
@@ -42,7 +42,7 @@ export default function Wc({AppItem}) {
     var data1=data["Dream League Soccer 2018"];
     var newData = data1.map((item) => ({
      text:item.text,
-    value: item.value   
+    value: item.value+5  
    })); 
   }else if(AppItem==="Facebook"){
     var data1=data["Facebook"];
@@ -54,7 +54,7 @@ export default function Wc({AppItem}) {
     var data1=data[ "Google"];
     var newData = data1.map((item) => ({
      text:item.text,
-    value: item.value   
+    value: item.value+5   
    })); 
   }else if(AppItem==="Firefox Browser fast & private"){
     var data1=data["Firefox Browser fast & private"];

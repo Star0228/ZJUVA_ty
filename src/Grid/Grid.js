@@ -43,7 +43,7 @@ export default function GridWeb() {
                 </Grid>
             </Grid>
             <Grid container spacing={0.1} marginY={1}>
-                <Grid item xs={6} md={3} marginX={2}>
+                <Grid item xs={6} md={3} marginX={1}>
                     <Item className='IM3' sx={{ bgcolor: '#f5f5f5', height: '40vh' }}>
                         <DataGridDemo />
                     </Item>
@@ -56,7 +56,7 @@ export default function GridWeb() {
                         </div>  
                     </Item>
                 </Grid>
-                <Grid item xs={6} md={4.5} >
+                <Grid item xs={6} md={4.5} marginX={1}>
                     <Item className='IM5' sx={{ bgcolor: '#f5f5f5', height: '40vh' }}>
                         <Box >
                         <Radar />

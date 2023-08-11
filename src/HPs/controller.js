@@ -31,14 +31,6 @@ const NameOfOptions = {
   Type: ['Free', 'Paid'],
   Ranking: ['Everyone', 'Everyone 10+', 'Teen', 'Mature 17+']
 }
-const MenuProps = {
-  PaperProps: {
-    style: {
-      maxHeight: 50,
-      width: 1,
-    },
-  },
-};
 
 
 function CreateSelectLabels({ value, setValue, NameOfId, Options }) {

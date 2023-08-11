@@ -1,26 +1,5 @@
 import ReactEcharts from 'echarts-for-react'
-import * as echarts from 'echarts';
 import origindata from './thankshuguan.json'
-import { Height } from '@mui/icons-material';
-
-const tag = {
-  label: 'exported'
-}
-
-
-function Stander({ AppElement }) {
-  return ({
-    label: AppElement['App'],
-    data: [{
-      x: AppElement['Reviews'],
-      y: AppElement['Rating'],
-      id: AppElement['App'],
-    }],
-    markerSize: AppElement.IogInstall,
-    color: AppElement.PreparedColor
-  }
-  )
-}
 
 
 export default function MainViewer({ CategorySelect, SizeSelect, TypeSelect, RankingSelect }) {
@@ -60,7 +39,7 @@ export default function MainViewer({ CategorySelect, SizeSelect, TypeSelect, Ran
           }
         }
       )
-      var data = datawithempty.filter(item => item != [])
+      var data = datawithempty.filter(item => item !== [])
       var element =
       {
         name: e.name,
